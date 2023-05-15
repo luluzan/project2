@@ -10,6 +10,7 @@
     --color-orangina: #FFAA11;
     --color-salmon: #FD848A;
     --color-lightgray: ##b9b7b7;
+    --color-white: #ffffff;
 
   }
   
@@ -17,6 +18,10 @@ html{
     font-family: 'Open Sans', sans-serif;
     color: var(--color-text);
     max-width: 100%;
+}
+
+body{
+    max-width: 80%;
 }
 
 nav{
@@ -34,6 +39,8 @@ nav ul{ list-style: none;
     flex-wrap: wrap;
     text-transform: uppercase;
     color: var(--color-almostblack);
+    align-items: baseline;
+    font-weight: 700;
 
 }
 
@@ -46,7 +53,7 @@ nav ul{ list-style: none;
     color: var(--color-strawberry-pink);
   }
   */
-  
+
   .navbar li:nth-child(4) a,
   .navbar li:last-child a {
     color: var(--color-strawberry-pink);
@@ -78,10 +85,70 @@ nav ul{ list-style: none;
 
 .around-download {
     border: 1px solid var(--color-strawberry-pink);
+    border-radius: 25px;
+    padding: 5px 10px;
     color: var(--color-strawberry-pink);
 }
 
 h1{
     color: var(--color-almostblack);
+    text-align: center;
 }
 
+p{
+    text-align: center;
+    max-width: 80%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-strawberry-pink);
+    color: var(--color-white);
+    text-decoration: none;
+    border-radius: 25px;
+    margin: 0 10px;
+  }
+
+  .img-index{
+    max-width: 60%;
+    margin:0 auto;
+  }
+  
+
+
+  /*PARTE DE CIRCULINCHIS*/
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .grid-item {
+    text-align: center;
+  }
+  
+  .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .circle i {
+    color: white;
+    font-size: 24px;
+  }
+  
+  .grid-item p {
+    margin-top: 10px;
+  }
