@@ -9,27 +9,79 @@
     --color-fields: #18C389;
     --color-orangina: #FFAA11;
     --color-salmon: #FD848A;
+    --color-lightgray: ##b9b7b7;
 
   }
   
 html{
     font-family: 'Open Sans', sans-serif;
-    background-color: #fabada;
+    color: var(--color-text);
+    max-width: 100%;
 }
 
 nav{
     display: flex;
-}
-ul{
-    list-style: none;
-}
-nav ul{}
+    max-width: 80%;
+    }
 
-ul a{
+nav img{
+    display: flex;
+    }
+
+nav ul{ list-style: none;
+    display:flex;
+    gap:20px;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    color: var(--color-almostblack);
+
+}
+
+.navbar li a {
     text-decoration: none;
+    color: var(--color-almostblack);
+  } 
+
+  /*.dropdown a {
+    color: var(--color-strawberry-pink);
+  }
+  */
+  
+  .navbar li:nth-child(4) a,
+  .navbar li:last-child a {
+    color: var(--color-strawberry-pink);
+  }
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color:var(--color-white) ;
+    color: var(--color-almostblack);
+    padding:10px;
+    margin-top: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Añade la sombra aquí */
+}
+  
+  .dropdown-menu li {
+    display: block;
+    padding:10px;
+    }
+
+  hr {
+    border: none; 
+    border-top: 1px solid #f1ecec;
+  }
+
+.around-download {
+    border: 1px solid var(--color-strawberry-pink);
+    color: var(--color-strawberry-pink);
 }
 
-btn-menu{
-    border: 1px solid red;
-
+h1{
+    color: var(--color-almostblack);
 }
+
