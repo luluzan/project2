@@ -3,13 +3,13 @@
 :root {
     --color-text: #787879;
     --color-almostblack: #2D2D2D;
-    --color-strawberry-pink: #FF4B63;
-    --color-lightpurple: ##AB82EF;
+    --color-strawberrypink:#FF4B63;
+    --color-lightpurple: #AB82EF;
     --color-lightblue: #46B0E4;
     --color-fields: #18C389;
     --color-orangina: #FFAA11;
     --color-salmon: #FD848A;
-    --color-lightgray: ##b9b7b7;
+    --color-lightgray: #b9b7b7;
     --color-white: #ffffff;
 
   }
@@ -17,25 +17,27 @@
 html{
     font-family: 'Open Sans', sans-serif;
     color: var(--color-text);
-    max-width: 100%;
+    max-width: 100vh;
+    margin:2vh;
 }
 
 body{
-    max-width: 80%;
+   /* max-width: 80vh;*/
 }
 
 nav{
     display: flex;
-    max-width: 80%;
+    max-width: 80vh;
     }
 
-nav img{
+#logo-inicio{
     display: flex;
+    justify-content: flex-start;
     }
 
 nav ul{ list-style: none;
     display:flex;
-    gap:20px;
+    gap:3vh;
     flex-wrap: wrap;
     text-transform: uppercase;
     color: var(--color-almostblack);
@@ -75,7 +77,7 @@ nav ul{ list-style: none;
   
   .dropdown-menu li {
     display: block;
-    padding:10px;
+    padding:1vh;
     }
 
   hr {
@@ -90,6 +92,22 @@ nav ul{ list-style: none;
     color: var(--color-strawberry-pink);
 }
 
+#geometrics1{
+  display:flex;
+  justify-content: space-between;
+}
+.green-diamond {
+  width: 2vh; /* Ancho deseado de la imagen */
+  height: auto; /* Altura ajustada automáticamente para mantener la proporción */
+    /* align-self: flex-start; Posicionamiento a la derecha */
+}
+
+.yellow-circle {
+  width: 4vh; /* Ancho deseado de la imagen */
+  height: auto; /* Altura ajustada automáticamente para mantener la proporción */
+  
+ /*  align-self: flex-end; Posicionamiento a la derecha */
+}
 h1{
     color: var(--color-almostblack);
     text-align: center;
@@ -116,6 +134,13 @@ p{
     margin: 0 10px;
   }
 
+  .blue-outline-circle{
+    display: flex;
+    justify-content: flex-start;
+    width: 5vh; 
+  height: auto; 
+  }
+
   .img-index{
     max-width: 60%;
     margin:0 auto;
@@ -134,6 +159,10 @@ p{
     text-align: center;
   }
   
+  .grid-item p {
+    margin-top: 10px;
+  }
+  /*
   .circle {
     display: flex;
     justify-content: center;
@@ -144,11 +173,93 @@ p{
     background-color: rgba(0, 0, 0, 0.5);
   }
   
-  .circle i {
-    color: white;
-    font-size: 24px;
+circle1-icon::before {
+    content: '\f135';
+  }*/
+
+  .circle1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--color-lightpurple);
+    opacity: 50%;;/* Púrpura con opacidad */
   }
   
-  .grid-item p {
-    margin-top: 10px;
+  .circle2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--color-fields);
+    opacity: 50%;
+  }
+  
+  
+
+  .circle3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--color-strawberrypink);
+    opacity: 50%;
+  }
+
+  .circle4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--color-orangina);
+    opacity: 50%;
+  }
+
+  .circle5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--color-lightblue);
+    opacity: 50%;
+  }
+
+
+  /****************************DESCRIPTION*******************************/
+
+  #organize{
+    margin-top: 5vh;
+   max-width: 90vh;
+   display: flex;
+  }
+
+  .img-screen{
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .h2-description{
+    text-transform: capitalize;
+    color: var(--color-almostblack);
+    
+  }
+
+
+.txts-descrition{
+  display: flex;
+  justify-content: flex-end;
+}
+
+  .p-decription{
+    color: var(--color-text)
   }
