@@ -238,7 +238,6 @@ circle1-icon::before {
   /****************************DESCRIPTION*******************************/
 
   #organize{
-    margin-top: 5vh;
    max-width: 90vh;
    display: flex;
   }
@@ -254,11 +253,6 @@ circle1-icon::before {
     
   }
 
-
-.txts-descrition{
-  display: flex;
-  justify-content: flex-end;
-}
 
   .p-decription{
     color: var(--color-text)
