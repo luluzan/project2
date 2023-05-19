@@ -133,6 +133,9 @@ p{
   text-align: center;
   max-width: 80%;
 }
+button{
+  text-transform: uppercase;
+}
 
 .button-container {
     display: flex;
@@ -140,7 +143,7 @@ p{
     margin-top: 20px;
   }
   
-  .download-button {
+  .btn-general {
     display: inline-block;
     padding: 10px 20px;
     background-color: var(--color-strawberrypink);
@@ -296,9 +299,11 @@ circle1-icon::before {
 
 #description-2{
   width: 100vw;
+  background:  var(--color-bgdescriptioon2) center center no-repeat fixed;
   background-color: var(--color-bgdescriptioon2);
   margin-left: 0;
   padding:10vh;
+  background-size:cover;
 }
 
 .btn{
@@ -315,5 +320,36 @@ circle1-icon::before {
   margin-left: 0;
 }
 
+.hover-option{
+  background-color: transparent;
+  border: 1px solid var(--color-almostblack);
+  color: var(--color-almostblack);
+}
+
+#hover-option:hover{
+  color:var(--color-bgcolor);
+  background-color: var(--color-strawberrypink);
+  border: 1px solid var(--color-strawberrypink);
+  letter-spacing: 2px;
+}
 
 
+
+
+
+
+
+
+.relevant-data {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+  
+  .div1 { grid-area: 1 / 1 / 2 / 2; }
+  .div2 { grid-area: 1 / 2 / 2 / 3; }
+  .div3 { grid-area: 1 / 3 / 2 / 4; }
+  .div4 { grid-area: 1 / 4 / 2 / 5; }
+  .div5 { grid-area: 1 / 5 / 2 / 6; }
