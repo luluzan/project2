@@ -112,8 +112,8 @@ hr {
   justify-content: space-between;
 }
 .green-diamond {
-  width: 2vh; /* Ancho deseado de la imagen */
-  height: auto; /* Altura ajustada automáticamente para mantener la proporción */
+  width: 2vh; 
+  height: auto; 
     /* align-self: flex-start; Posicionamiento a la derecha */
 }
 
