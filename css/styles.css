@@ -154,7 +154,6 @@ button{
   }
   
   .btn-general {
-
     font-size:x-small;
     font-weight: bolder;
     text-transform: uppercase;
@@ -265,7 +264,7 @@ button{
     justify-content: flex-start;
     width: 50%;
     object-fit: contain;
-     }
+    }
 
   .txts-description{
    width: 50%;
@@ -283,6 +282,7 @@ button{
     text-align: left;
     max-width: 100%;
 
+
   }
   /*#rebelway{
     display:flex;
@@ -298,20 +298,6 @@ button{
   margin-left: 0;
   padding:10vh;
   background-size:cover;
-}
-
-.btn{
-  color: var(--color-text);
-}
-
-    #btn-active{
-  background-color: var(--color-btnActive);
-  color:var(--color-white);
-  border:solid var(--color-btnActive);
-}
-
-.p-description{
-  margin-left: 0;
 }
 
 .hover-option{
