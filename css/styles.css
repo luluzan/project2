@@ -285,8 +285,7 @@ p{
   #description-2{
     width: 100vw;
     background:  var(--color-bgdescriptioon2) center center no-repeat fixed;
-    background-color: var(--color-bgdescriptioon2);
-    margin-left: 0;
+    margin-left: -6%;
     padding:10vh;
     background-size:cover;
     display: flex;
@@ -369,6 +368,55 @@ p{
 
 
 
+#testimony{
+  margin: 10vh auto;
+  }
+
+#testimony h2{
+  color:var(--color-almostblack);
+  text-align: center;
+  margin: 5vh auto;
+}
+
+#article-users-testimonial{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2rem 4rem;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "user1 user2 user3"
+      "akward akward akward"
+      "user4 user5 user6";
+    background-color: var(--color-bgcolor);
+}
+
+#article-users-testimonial img{
+  box-sizing: content-box;
+  width: 10vw;
+    }
+  
+  .user1 { grid-area: user1; 
+  }
+  
+  .user2 { grid-area: user2; }
+  
+  .user3 { grid-area: user3; }
+  
+  .akward { grid-area: akward;
+  background-color: #fff;
+  margin:2vw; }
+  
+  .user4 { grid-area: user4; }
+  
+  .user5 { grid-area: user5; }
+  
+  .user6 { grid-area: user6; }
+  
+    blockquote{
+      text-align: center;
+      font-style: italic;
+    }
 
 
 
