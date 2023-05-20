@@ -410,7 +410,20 @@ p{
   
   .akward { grid-area: akward;
   background-color: #fff;
-  margin:2vw; }
+  margin:2vw;
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 3% 4%;  
+  grid-template-areas: 
+    ". primester primester greeenapp greeenapp volmeter volmeter keyrunner keyrunner ."
+    ". . . . Amplifier Amplifier . . . .";  }
+    .primester { grid-area: primester; }
+    .greeenapp { grid-area: greeenapp; }
+    .volmeter { grid-area: volmeter; }
+    .keyrunner { grid-area: keyrunner; }
+    .Amplifier { grid-area: Amplifier; }
   
   .user4 { grid-area: user4; }
   
