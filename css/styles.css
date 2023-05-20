@@ -389,11 +389,16 @@ p{
       "akward akward akward"
       "user4 user5 user6";
     background-color: var(--color-bgcolor);
+    justify-items: center; 
+    align-items: center; 
+    text-align: center;
 }
 
 #article-users-testimonial img{
   box-sizing: content-box;
   width: 10vw;
+  display: block;
+  margin: 0 auto;
     }
   
   .user1 { grid-area: user1; 
@@ -413,11 +418,17 @@ p{
   
   .user6 { grid-area: user6; }
   
-    blockquote{
+  blockquote{
       text-align: center;
       font-style: italic;
     }
-
+cite{
+  font-weight: bolder;
+  color:var(--color-almostblack);
+  font-style: normal;
+    
+  
+}
 
 
 .relevant-data {
