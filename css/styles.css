@@ -108,7 +108,13 @@ hr {
   color: var(--color-strawberry-pink);
 }
 
- 
+
+
+/********************intro*****************/
+#intro{
+  background-color: var(--color-bgcolor) center center no-repeat fixed;
+	background-size:cover;
+}
 #geometrics1{
   display:flex;
   justify-content: space-between;
@@ -116,14 +122,16 @@ hr {
 .green-diamond {
   width: 2vh; 
   height: auto; 
-    /* align-self: flex-start; Posicionamiento a la derecha */
+  margin-top: 10vh;
+  display: flex;
+  align-self:flex-start;
 }
 
 .yellow-circle {
-  width: 4vh; /* Ancho deseado de la imagen */
-  height: auto; /* Altura ajustada automáticamente para mantener la proporción */
-  
- /*  align-self: flex-end; Posicionamiento a la derecha */
+  width: 4vh; 
+  height: auto; 
+  margin-top: 4vh;
+  align-self: flex-end; Posicionamiento a la derecha */
 }
 h1{
     color: var(--color-almostblack);
@@ -146,7 +154,11 @@ button{
   }
   
   .btn-general {
-    padding: 10px 20px;
+
+    font-size:x-small;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding: 0rem 3rem;
     background-color: var(--color-strawberrypink);
     color: var(--color-white);
     text-decoration: none;
@@ -155,6 +167,14 @@ button{
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    transition: box-shadow 0.6s ease;;
+  }
+  
+  .btn-general:hover{
+    /*color:var(--color-almostblack);*/
+    letter-spacing: 2px;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.3);
+
   }
 
   .blue-outline-circle{
@@ -166,7 +186,8 @@ button{
 
   .img-index{
     max-width: 60%;
-    margin:0 auto;
+    margin:3vh auto;
+    display: block; 
   }
   
 
@@ -174,95 +195,64 @@ button{
   /*PARTE DE CIRCULINCHIS*/
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 20px;
+    margin:auto;
   }
-  
   .grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-  }
+    }
   
-  .grid-item p {
-    margin-top: 10px;
-  }
-  /*
-  .circle {
+  .circle1,
+  .circle2, .circle3, .circle4, .circle5 {
+    width: 20%; 
+    max-width: 100px; 
+    height: auto; 
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-circle1-icon::before {
-    content: '\f135';
-  }*/
-
+    position: relative;
+  } 
   .circle1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: var(--color-lightpurple);
-    opacity: 50%;;/* Púrpura con opacidad */
-  }
+    background-color: rgba(154, 103, 231, 0.2);
+     }
   
   .circle2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: var(--color-fields);
-    opacity: 50%;
-  }
-  
-  
-
+    background-color:rgba(24, 195, 137, 0.2);
+     }
+ 
   .circle3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: var(--color-strawberrypink);
-    opacity: 50%;
-  }
+    background-color: rgba(255, 75, 99, 0.2);
+    }
 
   .circle4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: var(--color-orangina);
-    opacity: 50%;
-  }
+    background-color:rgba(255, 170, 17, 0.3);
+     }
 
   .circle5 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: var(--color-lightblue);
-    opacity: 50%;
+    background-color: rgba(70, 176, 228, 0.3);
+   }
+   .inside{
+    max-width: 50%; 
+    max-height: 50%; 
+    position: absolute; 
   }
-
 
   /****************************DESCRIPTION*******************************/
 
   
   #description{
+    background-color: var(--color-bgcolor)  center center no-repeat fixed;
+    background-size:cover;
     margin-top: 30vh;
+
   }
   
   #organize{
@@ -294,12 +284,12 @@ circle1-icon::before {
     max-width: 100%;
 
   }
-  #rebelway{
+  /*#rebelway{
     display:flex;
     flex-wrap:wrap;
     border: none;
     text-transform: uppercase;
-     }
+     }*/
 
 #description-2{
   width: 100vw;
