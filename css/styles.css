@@ -25,6 +25,8 @@ html{
     display:flex;
     justify-content: center;
     background-color: var(--color-bgcolor);
+    max-width: 90vw;
+    margin: 0 auto; /* Centra el contenido horizontalmente */
 }
 
 body{
@@ -144,13 +146,15 @@ button{
   }
   
   .btn-general {
-    display: inline-block;
     padding: 10px 20px;
     background-color: var(--color-strawberrypink);
     color: var(--color-white);
     text-decoration: none;
     border-radius: 25px;
     margin: 0 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .blue-outline-circle{
