@@ -426,8 +426,11 @@ cite{
   font-weight: bolder;
   color:var(--color-almostblack);
   font-style: normal;
-    
-  
+}
+hr{
+  border-width: 2px;  
+  width: 3vw;
+  margin: 2vh auto;
 }
 
 
