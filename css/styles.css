@@ -104,7 +104,7 @@ nav ul {
 }
 
 .dropdown:hover > a {
-  color: var(--color-strawberrypink); /* Cambia el color de Extra al hacer hover en el elemento padre */
+  color: var(--color-strawberrypink); 
 }
 
 .dropdown-menu li {
@@ -113,7 +113,7 @@ nav ul {
 }
 
 .dropdown-menu li:first-child {
-  margin-top: 0; /* Elimina el espacio superior del primer elemento del menú desplegable */
+  margin-top: 0; 
 }
 
 hr {
@@ -146,7 +146,7 @@ hr {
 .green-diamond {
   width: 2vh; 
   height: auto; 
-  margin-top: 10vh;
+  margin-top: 17vh;
   display: flex;
   align-self:flex-start;
 }
@@ -154,8 +154,8 @@ hr {
 .yellow-circle {
   width: 4vh; 
   height: auto; 
-  margin-top: 4vh;
-  align-self: flex-end; Posicionamiento a la derecha */
+  margin-top: 7vh;
+  align-self: flex-end; 
 }
 h1{
     color: var(--color-almostblack);
@@ -201,7 +201,7 @@ p{
     display: flex;
     justify-content: flex-start;
     width: 5vh; 
-  height: auto; 
+    height: auto; 
 }
 
 .img-index{
@@ -341,7 +341,7 @@ p{
 #btn-group-description-2 .btn:hover {
     background-color: var(--color-btnActive);
     color: var(--color-bgcolor);
-    transform: scale(1.1); /* Zoom del 10% en hover */
+    transform: scale(1.1); 
     box-shadow: 0 0 5px rgba(154, 103, 231, 0.5);
 }
 
@@ -385,7 +385,7 @@ p{
 }
 
 .left ul li{
-   line-height: 205%; 
+  line-height: 205%; 
 }
 
 .right{
