@@ -24,13 +24,16 @@ html{
     margin:0;
     display:flex;
     justify-content: center;
+    align-items: center;
     background-color: var(--color-bgcolor);
     max-width: 90vw;
-    margin: 0 auto; /* Centra el contenido horizontalmente */
-}
+    margin: 0 auto; 
+    overflow-x: hidden;
+    }
 
 body{
   width: 90%;
+  margin:0;
    /* max-width: 80vh;*/
 }
 
@@ -44,7 +47,7 @@ nav {
   align-items: center;
   background-color: var(--color-bgcolor);
   justify-content: space-between;
-  width: 90vw;
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -532,24 +535,19 @@ hr{
 }
 
   
-.btn-general {
-    font-size:x-small;
-    font-weight: bolder;
-    text-transform: uppercase;
-    padding: 1rem auto;
-    background-color: var(--color-strawberrypink);
-    color: var(--color-white);
-    text-decoration: none;
-    border-radius: 25px;
-    margin: 0 10px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: box-shadow 0.6s ease;
-    border: none;
-}
-.btn-general .no-icon {
-  padding: 2rem 4rem;
+
+.no-icon {
+  height: 2rem;
+  width: 8rem;
+  display: inline-block;
+  text-align: center;
+  padding: 0;
+  }
+
+.no-icon:hover{ 
+  border:2px solid var(--color-strawberrypink);
+  background-color: var(--color-bgcolor);
+  color: var(--color-strawberrypink);
   }
 .btn-end{
   padding-bottom:40vh;
