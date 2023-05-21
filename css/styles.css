@@ -192,7 +192,6 @@ p{
 }
 
 .btn-general:hover{
-    /*color:var(--color-almostblack);*/
     font-size: medium;
     letter-spacing: 2px;
     box-shadow: 0 0 10px 5px rgba(154, 103, 231, 0.8);
@@ -386,7 +385,7 @@ p{
 }
 
 .left ul li{
-   line-height: 205%; /* Ajusta el valor según tus preferencias */
+   line-height: 205%; 
 }
 
 .right{
