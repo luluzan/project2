@@ -41,18 +41,22 @@ header{
 
 nav {
   display: flex;
+  align-items: center;
   background-color: var(--color-bgcolor);
-  justify-content: space-between; /* Cambio realizado */
-  width: 100%;
+  justify-content: space-between;
+  width: 90vw;
   position: fixed;
   top: 0;
   left: 0;
+}
+.menu-sup{
+  box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
 }
 
 #logo-inicio {
   width: 10vw;
   height: 5vh;
-  margin-right: 2vh; /* Añadido para separar del contenido a la derecha */
+  margin-right: 2vh; 
 }
 
 nav ul {
@@ -534,14 +538,17 @@ hr{
   padding: 2rem 4rem;
 }
 
-}
 .grid-footer {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
+.grid-footer li a{
+  text-decoration: none;
+  color: var(--color-text);
+}
+
 .p-last{
   text-align: center;
 }
