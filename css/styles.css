@@ -37,48 +37,55 @@ body{
   }
 
 header{
-  
   align-items: center;
+  
 }
 
 nav {
   display: flex;
   align-items: center;
-  background-color: var(--color-bgcolor);
   justify-content: space-between;
-  width: 100%;
+  width: 100vw;
+  background-color: var(--color-bgcolor);
   position: fixed;
   top: 0;
   left: 0;
 }
+
+.logo-nav{
+  margin-left: 5vw;
+}
+.navbar {
+  margin-right: 6vw;
+}
+
 .menu-sup{
   box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
 }
 
-#logo-inicio {
+#logo-home {
   width: 10vw;
   height: 5vh;
   margin-right: 2vh; 
+  margin-left: 20px;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 3vh;
+  gap: 4vh;
   text-transform: uppercase;
   color: var(--color-almostblack);
   align-items: baseline;
   font-weight: 700;
 }
 
-
 .navbar li a {
   text-decoration: none;
   color: var(--color-almostblack);
 }
 
-.navbar li:nth-child(4) a,
-.navbar li:last-child a {
+.navbar li a:hover{
   color: var(--color-strawberrypink);
 }
 
@@ -96,9 +103,17 @@ nav ul {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.dropdown:hover > a {
+  color: var(--color-strawberrypink); /* Cambia el color de Extra al hacer hover en el elemento padre */
+}
+
 .dropdown-menu li {
   display: block;
   padding: 1vh;
+}
+
+.dropdown-menu li:first-child {
+  margin-top: 0; /* Elimina el espacio superior del primer elemento del menú desplegable */
 }
 
 hr {
@@ -106,13 +121,13 @@ hr {
   border-top: 1px solid #f1ecec;
 }
 
-.around-download {
-  border: 1px solid var(--color-strawberry-pink);
+.around-download a{
+  border: 2px solid var(--color-strawberrypink);
   border-radius: 25px;
   padding: 1vh 2vw;
   display: inline-block;
-  color: var(--color-strawberry-pink);
 }
+
 
 
 
@@ -301,9 +316,9 @@ p{
 
 #description-2{
   width: 100vw;
-  background:  var(--color-bgdescriptioon2) center center no-repeat fixed;
-  margin-left: -6%;
-  padding:10vh;
+  background:  var(--color-bgdescriptioon2);
+  margin-left: -11%;
+  padding:11vh;
   background-size:cover;
   display: flex;
   flex-direction: row;
@@ -361,25 +376,31 @@ p{
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  max-width: 50%;
+  max-width: 45%;
 }
 
 .p-description{
   text-align: left;
   justify-content: flex-start;
+  line-height: 205%;;
+}
+
+.left ul li{
+   line-height: 205%; /* Ajusta el valor según tus preferencias */
 }
 
 .right{
   display: flex;
   justify-content: center;
-  width: 50%;
-  margin-left: 7%;
+  width: 45%;
+  margin-left: 1%;
 }
 
 .img-description{
   display: flex;
-  justify-content: flex-end;
-  width: 50%;
+  justify-content: flex-start;
+  width: 80%;
+  height: auto;
   object-fit: contain;
 }
 
@@ -486,7 +507,8 @@ hr{
   justify-items: center; 
   align-items: center; 
   text-align: center;
-  margin: 10vh auto;
+  margin-left: -11vw;
+  margin-right: -11vw;
   padding:8vh;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
@@ -544,29 +566,29 @@ hr{
   }
 }
 
-  
-
 .no-icon {
   height: 2rem;
   width: 8rem;
   display: inline-block;
   text-align: center;
   padding: 0;
+  border:2px solid var(--color-almostblack);
+  background-color: var(--color-bgdescriptioon2);
+  color: var(--color-almostblack);
+  margin-top: 3vh;
   }
 
 .no-icon:hover{ 
   border:2px solid var(--color-strawberrypink);
-  background-color: var(--color-bgcolor);
-  color: var(--color-strawberrypink);
+  color: var(--color-bgcolor);
+  background-color: var(--color-strawberrypink);
   }
-.btn-end{
-  padding-bottom:40vh;
-}
 
 .end-line{
   border-width: 2px;  
   width: 100vw;
-  margin: 11vh auto;
+  margin-top: 15vh;
+  margin-left: -11vw;
 } 
 
 
@@ -577,8 +599,9 @@ hr{
   display: flex;
   flex-wrap: wrap;
   gap: 5vw;
+  justify-content: center;
   }
-  h5{
+  h4{
     font-weight: bold;
     font-style: normal;
   }
@@ -589,6 +612,7 @@ hr{
 
 .last-p{
   text-align: center;
+  margin: 0 auto;
 }
 
 .contact {
@@ -615,7 +639,6 @@ footer img{
 }
 
 .copy{
-  border: 2px solid red;
   margin-top: 8vh;
 }
 
