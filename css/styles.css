@@ -167,14 +167,15 @@ p{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    transition: box-shadow 0.6s ease;
+    transition: box-shadow 0.8s ease;
     border: none;
 }
  
 .btn-general:hover{
     /*color:var(--color-almostblack);*/
+    font-size: medium;
     letter-spacing: 2px;
-    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px 5px rgba(154, 103, 231, 0.8);
 
 }
 
@@ -513,12 +514,23 @@ hr{
   font-size: 1rem;
 }   
 
-.img-full{
+.img-full {
   width: 70%;
   display: block;
   margin: 0 auto;
   padding-top: 10vh;
+  animation: vibration 0.1s infinite alternate;
 }
+
+@keyframes vibration {
+  0% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  100% {
+    transform: translateX(2px) rotate(1deg);
+  }
+}
+
   
 .btn-general {
     font-size:x-small;
