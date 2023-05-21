@@ -34,8 +34,7 @@ html{
 body{
   width: 90%;
   margin:0;
-   /* max-width: 80vh;*/
-}
+  }
 
 header{
   
@@ -121,6 +120,9 @@ hr {
 #intro{
   background-color: var(--color-bgcolor) center center no-repeat fixed;
 	background-size:cover;
+  }
+#intro p{
+  border:1px solid red:
 }
 #geometrics1{
   display:flex;
@@ -156,7 +158,7 @@ p{
     justify-content: center;
     margin-top: 20px;
 }
- 
+
 .btn-general {
     font-size:x-small;
     font-weight: bolder;
@@ -173,13 +175,12 @@ p{
     transition: box-shadow 0.8s ease;
     border: none;
 }
- 
+
 .btn-general:hover{
     /*color:var(--color-almostblack);*/
     font-size: medium;
     letter-spacing: 2px;
     box-shadow: 0 0 10px 5px rgba(154, 103, 231, 0.8);
-
 }
 
 .blue-outline-circle{
@@ -194,8 +195,6 @@ p{
     margin:3vh auto;
     display: block; 
 }
-  
-
 
 /*PARTE DE CIRCULINCHIS*/
 .grid-container {
@@ -252,35 +251,41 @@ p{
 
 /****************************DESCRIPTION*******************************/
 
-  
 #description{
     background-color: var(--color-bgcolor)  center center no-repeat fixed;
     background-size:cover;
     margin-top: 30vh;
   
 }
-  
+
 #organize{
-   max-width: 90vh;
-   display: flex;
+  display: flex;
+  margin: 8vh auto;
 }
 
 .img-screen{
-    display: flex;
-    justify-content: flex-start;
-    width: 50%;
-    object-fit: contain;
+  display: flex;
+  justify-content: flex-start;
+  max-width: 45%;
+  height: auto;
+  object-fit: contain;
 }
 
 .txts-description{
-  width: 50%;
+  width: 45%;
   line-height: 205%;
+  margin-left: 4%;
+  padding-left: 1vw;
+  height: 80%;
+
 }
 
 .h2-description{
     text-transform: capitalize;
     color: var(--color-almostblack);
     text-align: left;
+    font-size: 2em;
+    line-height: 205%;
 }
 
 .p-decription{
@@ -288,30 +293,35 @@ p{
     text-align: left;
     max-width: 100%;
 }
+#organize ul{
+  list-style-type: square;
+    list-style-position: outside;
+    padding-left: 1vw;
+  }
 
 #description-2{
-    width: 100vw;
-    background:  var(--color-bgdescriptioon2) center center no-repeat fixed;
-    margin-left: -6%;
-    padding:10vh;
-    background-size:cover;
-    display: flex;
-    flex-direction: row;
+  width: 100vw;
+  background:  var(--color-bgdescriptioon2) center center no-repeat fixed;
+  margin-left: -6%;
+  padding:10vh;
+  background-size:cover;
+  display: flex;
+  flex-direction: row;
 }
 
 #btn-group-description-2 .btn {
-    font-weight: bolder;
-    border: none;
-    background-color: #fff;
-    color: var(--color-text);
-    transition: background-color 0.3s, color 0.3s;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: 2rem;
-    width: 8rem;
-    gap:0.7em;
-    transition: 0.8s;
+  font-weight: bolder;
+  border: none;
+  background-color: #fff;
+  color: var(--color-text);
+  transition: background-color 0.3s, color 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  width: 8rem;
+  gap:0.7em;
+  transition: 0.8s;
 }
 
 #btn-group-description-2 .btn:hover {
@@ -362,7 +372,7 @@ p{
 .right{
   display: flex;
   justify-content: center;
-  width: 30%;
+  width: 50%;
   margin-left: 7%;
 }
 
